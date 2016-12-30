@@ -2,6 +2,43 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
+## Dependencies
+You must have node and npm installed to run. To easily serve, build, or generate components, services, pipes or any supported features you can use angular-cli. To install the angular client from anywhere in the console just run:
+```
+npm install -g angular-cli
+```
+
+## Installation
+First you need to clone the repo using SSH or HTTP. It will install into a folder called angular-webapp.
+```
+git clone git@github.com:thebaron24/angular-webapp.git
+```
+
+Then Change directories to the angular webapp.
+```
+cd angular-webapp
+```
+
+Now you need to install the node module dependencies. Inside the angular-webapp folder run:
+```
+npm install
+```
+
+After all of your dependencies are loaded you can run the project with agnular-cli. If you havent already run:
+```
+npm install -g angular-cli
+```
+
+Once you have the angular client installed just run this to serve the webapp:
+```
+ng serve
+```
+
+You can see your new angular 2 webapp at:
+```
+http://localhost:4200
+```
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
