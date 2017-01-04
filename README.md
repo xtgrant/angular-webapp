@@ -24,7 +24,7 @@ Now you need to install the node module dependencies. Inside the angular-webapp 
 npm install
 ```
 
-After all of your dependencies are loaded you can run the project with agnular-cli. If you havent already run:
+After all of your dependencies are loaded you can run the project with angular-cli. If you havent already run:
 ```
 npm install -g angular-cli
 ```
@@ -38,6 +38,21 @@ You can see your new angular 2 webapp at:
 ```
 http://localhost:4200
 ```
+
+## Theming
+Currently angular-webapp comes with two choices for theming pre-installed: [material2](https://github.com/angular/material2) and the css only for [bootstrap4](https://github.com/twbs/bootstrap). This allows the developer to choose the option best suited for thier project and begin coding right away. You can remove either after you have made your decision.
+
+### Bootstrap 4
+Bootstrap 4 can be customized by modifying the sass files in the bootstrap folder within the node_modules folder
+
+Once you have installed angular-webapp node module dependencies by running `npm install` in the installation section above, you can navigate from the main angular-webapp folder `to node_modules/bootstrap` folder and run `npm install` from your command line to install the Bootstrap 4 dependencies. You only need to do this if you want to customize Bootstrap or if you want to use the new flex grid (which is highly recommended).
+
+Once the dependencies have finished installing open the `_variables.scss` file that resides inside the bootstrap scss folder. Find the variable ``$enable-flex:`` and change it to `true`. Precompile the css with the changes by running `grunt` from the top level of the bootstrap folder. The angular-webapp project already points to the newly compiled css.
+
+You can modify the other variables inside `_variable.scss` to customize the bootstrap theme as well, or follow your favorite bootstrap theming guide.
+
+### Material 2
+Theming [Material2](https://github.com/angular/material2) is a little easier. Open the `style.scss` file inside the angular-webapp/src folder and follow the guide set up for you at [Material2 Theming](https://github.com/angular/material2/blob/master/guides/theming.md). For some color choices to start with check out the color guide at [Material2 Theme Colors](https://material.io/guidelines/style/color.html).
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
