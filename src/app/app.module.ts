@@ -4,18 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
-import { AppComponent, DialogContent} from './app.component';
+import { AppComponent} from './app.component';
+import { AppRoutingModule } from './router/routing.module';
+import { HomeComponent } from './home/home.component';
+import { LostComponent, DialogContent } from './lost/lost.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DialogContent
+    DialogContent,
+    HomeComponent,
+    LostComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule.forRoot()
+    MaterialModule.forRoot(),
+    AppRoutingModule
   ],
   entryComponents: [DialogContent],
   providers: [],
