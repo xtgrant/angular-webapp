@@ -1,13 +1,20 @@
 <md-sidenav-layout [class.m2app-dark]="isDarkTheme">
 
   <md-sidenav #sidenav mode="over" class="app-sidenav">
+
     <!-- sidenav content -->
-    <h2>Navigation</h2>
-    <md-list>
-      <md-list-item><a routerLink="/" routerLinkActive="active">Home</a></md-list-item>
-      <md-list-item><a routerLink="/lost" routerLinkActive="active">404</a></md-list-item>
-    </md-list>
-    <p>I fight for the user</p>
+    <div class="card no-border">
+      <img class="card-img-top img-fluid" src="https://placeimg.com/400/300/tech" alt="Card image cap">
+      <div class="card-block">
+        <h4 class="card-title text-xs-center">Card title</h4>
+        <p class="card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+      <div class="list-group list-group-flush">
+        <a routerLink="/" class="list-group-item list-group-item-action">Home</a>
+        <a routerLink="/lost" routerLinkActive="active" class="list-group-item list-group-item-action">404</a>
+      </div>
+    </div>
+
   </md-sidenav>
 
   <md-toolbar color="primary">

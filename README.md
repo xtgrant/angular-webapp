@@ -1,6 +1,14 @@
-# AngularWebapp
+# Angular-Webapp
+This project is intended to be a seed project for developers looking to quickly start an Angular 2 web application. It can be used for learning or as a catalist for rapid web development.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
+
+## Planned development
+* Advanced routing
+* Data fetching service that's configurable and reusable
+* Configure app from JSON
+* Authentication and login component
+* Image carrossel
 
 ## Dependencies
 You must have node and npm installed to run. To easily serve, build, or generate components, services, pipes or any supported features you can use angular-cli. To install the angular client from anywhere in the console just run:

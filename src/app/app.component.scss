@@ -15,8 +15,9 @@ md-sidenav-layout.m2app-dark {
 // }
 
 .app-sidenav {
-  padding: 10px;
+  // padding: 10px;
   min-width: 100px;
+  max-width: 300px;
 }
 
 .app-toolbar-menu {
@@ -50,4 +51,8 @@ md-sidenav-layout.m2app-dark {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+.card.no-border {
+  border: 0;
 }
